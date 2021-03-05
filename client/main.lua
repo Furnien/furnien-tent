@@ -1,6 +1,7 @@
 local ESX = nil
 local round = 0
 local cadirBlip = nil
+--local cid = exports["isPed"]:isPed("cid") np-inventory kullananlar yorum satırını kaldırın
 
 Citizen.CreateThread(function()
 	while ESX == nil do
