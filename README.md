@@ -8,3 +8,5 @@
 3-Map üzerinde çadırınızın yerini görebilirsiniz
 
 M3,QB,NP Envanterlerine uyumludur. Config üzerinden kullandığınız envanteri belirtin.
+
+Preview : https://streamable.com/nrwpia
