@@ -1,7 +1,7 @@
 local ESX = nil
 local round = 0
 local cadirBlip = nil
---local cid = exports["isPed"]:isPed("cid") np-inventory kullananlar yorum satırını kaldırın
+--local cid = --exports["isPed"]:isPed("cid") np-inventory kullananlar yorum satırını kaldırın
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -96,6 +96,14 @@ end
      TriggerServerEvent("inventory:server:OpenInventory", "cadir", "Çadır"..ESX.GetPlayerData().identifier)
      TriggerEvent("inventory:client:SetCurrentStash","Çadır"..ESX.GetPlayerData().identifier)
  end
+
+ function disc()
+	TriggerEvent('disc-inventoryhud:openInventory', {
+	type = 'cadir',
+	owner = 'Çadır-'..ESX.GetPlayerData().identifier,
+	slots = 5,
+	})
+end	
  
 function DrawText3Ds(x,y,z, text)
     local onScreen,_x,_y=World3dToScreen2d(x,y,z)
